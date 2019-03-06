@@ -1,0 +1,343 @@
+<html>
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+
+<!-- Material Design Bootstrap -->
+<link href="mdb/mdb.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="sliki/favicon.png"/>
+  <title>Филмски Репертоар</title>
+</head>
+
+<body>
+<!-- heder(najava, socijaln ikoni, search bar) pocetok-->
+<div class="container mt-3">
+	<div class="row">
+
+
+
+
+
+<div class="col-12">
+
+		<div class="float-left"><a href="#" id="najava"><span class="b">Најави се</span></a>
+		<form id="najava-skrij">
+		<input type="text" class="form-control najava-pole my-1" placeholder="Корисничко име"></input>
+		<input type="text" class="form-control najava-pole" placeholder="Лозинка"></input>
+		<button class="btn btn-unique najava-btn float-none">Најава</button>
+		</form>
+		</div>
+
+
+
+<div class="float-right">
+	<a href="http://fb.com" target="_new"><img src="sliki/fb.png" class="soc mt-2 mx-1 img-fluid"></a>
+	<a href="http://twitter.com" target="_new"><img src="sliki/twitter.png" class="soc mt-2 mx-1 img-fluid"></a>
+	<a href="http://instagram.com" target="_new"><img src="sliki/instagram.png" class="soc mt-2 mx-1 img-fluid"></a>
+
+
+	<div class="float-right ml-3">
+  	<input id="preb" class="form-control fas" type="text" placeholder="&#xf002">
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- heder(najava, socijaln ikoni, search bar) kraj-->
+
+<!-- navbar pocetok-->
+<nav class="navbar navbar-expand-md navbar-dark svetlo-sina my-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="img-fluid logo" src="sliki/logo.png"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Почетна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Репертоар</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Купи карта</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакт</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</nav>
+<!-- navbar kraj-->
+
+<!-- slajder pocetok-->
+<div id="slajder" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#slajder" data-slide-to="0" class="active"></li>
+    <li data-target="#slajder" data-slide-to="1"></li>
+    <li data-target="#slajder" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="sliki/slide1.jpg">
+      <div class="carousel-caption">
+        <p class="slider-naslov hidden-xs-up">Капетанка <span class="b">Марвел</span></p>
+        <p class="slider-godina hidden-xs-up">2019</p>
+        <p class="slider-datum hidden-xs-up">На репертоар од <span class="b">03.03.2019</span></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="sliki/slide2.jpg">
+       <div class="carousel-caption">
+        <p class="slider-naslov hidden-xs-up">Ладна <span class="b">Одмазда</span></p>
+        <p class="slider-godina hidden-xs-up">2019</p>
+        <p class="slider-datum hidden-xs-up">На репертоар од <span class="b">18.03.2019</span></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="sliki/slide3.jpg">
+       <div class="carousel-caption">
+        <p class="slider-naslov hidden-xs-up">Боемска <span class="b">Рапсодија</span></p>
+        <p class="slider-godina hidden-xs-up">2019</p>
+        <p class="slider-datum hidden-xs-up">На репертоар од <span class="b">12.02.2019</span></p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#slajder" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="izbrisigoova-sr-only strelka">&lsaquo;</span>
+  </a>
+  <a class="carousel-control-next" href="#slajder" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="strelka">&rsaquo;</span>
+  </a>
+</div>
+<!-- slajder kraj-->
+
+<!-- najnovi filmovi pocetok -->
+<div class="my-3 py-1 svetlo-sina najnovi-filmovi">
+<div class="container">
+<h3 class="my-1 podnaslov"><span class="b">Најнови</span> филмови</h3>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+
+
+<!-- karticka 1 -->
+<div class="col-4 col-md-4">
+<div class="card card-cascade narrower mb-4">
+      <div class="view view-cascade">
+        <img src="sliki/najnovi/1.jpg" class="card-img-top">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <div class="card-body card-body-cascade">
+        <h5 class="pink-text karticka-naslov">Лего <span class="b">Филм 2</span></h5>
+
+        <h4 class="card-title">Жанр: <span class="b">Анимиран / цртан, Авантура</span></h4>
+  
+        <p class="card-text">Поминаа пет години како на граѓаните се им е одлично, но сега се соочуваат со огромна нова закана: Lego Duplo® - освојувачи од вселената, кои уништуваат побрзо отколку што може да се обнови.</p>
+        <a class="btn btn-unique"><span class="povekje">Повеќе</span></a>
+      </div>
+  </div> 
+</div>
+
+
+<!-- karticka 2 -->
+<div class="col-4 col-md-4">
+  <div class="card card-cascade narrower mb-4">
+      <div class="view view-cascade">
+        <img src="sliki/najnovi/2.jpg" class="card-img-top">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <div class="card-body card-body-cascade">
+        <h5 class="pink-text karticka-naslov">Црниот <span class="b">Пантер</span></h5>
+
+        <h4 class="card-title">Жанр: <span class="b">Акција, Авантура</span></h4>
+  
+        <p class="card-text">По смртта на неговиот татко, Т'Чала, кралот на Ваканда, се враќа дома во изолираната и технолошки напредната африканска нација за да го превземе тронот како вистински крал. Lorem ipsum dolor sit amet, pri no facer urbanitas, nam augue dicunt</p>
+        <a class="btn btn-unique">Повеќе</a>
+      </div>
+  </div> 
+ </div> 
+
+
+
+
+
+ <!-- karticka 3 -->
+<div class="col-4 col-md-4">
+  <div class="card card-cascade narrower mb-4">
+      <div class="view view-cascade">
+        <img src="sliki/najnovi/3.jpg" class="card-img-top">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <div class="card-body card-body-cascade">
+        <h5 class="pink-text karticka-naslov">Дедпул <span class="b">2</span></h5>
+
+        <h4 class="card-title">Жанр: <span class="b">Акција, Фантазија</span></h4>
+  
+        <p class="card-text">По преживеаниот фатален напад од говеда, унаказениот шеф на кафитеријата (Вејд Вилсон) се труди да го оствари својот сон и да стане најзгодниот шанкер во Мејбери, а истовремено мора да научи да живее со изгубеното сетило за вкус.</p>
+        <a class="btn btn-unique">Повеќе</a>
+      </div>
+  </div> 
+ </div> 
+
+
+</div>
+</div>
+
+<!-- najnovi filmovi kraj -->
+
+
+
+
+
+
+
+<!-- najlajkuvani filmovi pocetok -->
+<div class="mb-3 py-1 svetlo-sina najlajkuvani-filmovi">
+<div class="container">
+<h3 class="my-1 podnaslov"><span class="b">Најлајкувани</span> филмови</h3>
+</div>
+</div>
+
+
+
+<div class="container">
+<div class="row">
+
+
+<!-- Najlajkuvani 1 -->
+<div class="col-3">
+<div class="view overlay">
+  <img src="sliki/najlajkuvani/1.jpg" class="img-fluid najlajkuvani-slika" alt="Sample image with waves effect.">
+  <a>
+    <div class="mask"></div>
+    <div class="sredina">Escape <span class="b">Room</span></div>
+    <div class="lajkoj">30 <i class="fas fa-heart srce"></i></div>
+  </a>
+</div>
+</div>
+
+
+<!-- Najlajkuvani 2 -->
+<div class="col-3">
+<div class="view overlay">
+  <img src="sliki/najlajkuvani/2.jpg" class="img-fluid najlajkuvani-slika" alt="Sample image with waves effect.">
+  <a>
+    <div class="mask"></div>
+    <div class="sredina">The <span class="b">Mule</span></div>
+    <div class="lajkoj">23 <i class="fas fa-heart srce"></i></div>
+  </a>
+</div>
+</div>
+
+
+
+<!-- Najlajkuvani 3 -->
+<div class="col-3">
+<div class="view overlay">
+  <img src="sliki/najlajkuvani/3.jpg" class="img-fluid najlajkuvani-slika" alt="Sample image with waves effect.">
+  <a>
+    <div class="mask"></div>
+    <div class="sredina">Ѕвездата е <span class="b">Родена</span></div>
+    <div class="lajkoj">15 <i class="fas fa-heart srce"></i></div>
+  </a>
+</div>
+</div>
+
+
+<!-- Najlajkuvani 4 -->
+<div class="col-3">
+<div class="view overlay">
+  <img src="sliki/najlajkuvani/4.jpg" class="img-fluid najlajkuvani-slika" alt="Sample image with waves effect.">
+  <a>
+    <div class="mask"></div>
+    <div class="sredina"><span class="b">Алита</span></div>
+    <div class="lajkoj">12 <i class="fas fa-heart srce"></i></div>
+  </a>
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+<!-- najlajkuvani filmovi kraj -->
+
+
+
+
+
+
+<!-- footer -->
+<footer class="my-3 svetlo-sina">
+<div class="container">
+<h6 class="py-1"><img src="sliki/logo-footer.png" class="logo-footer"> Филмски Репертоар - Copyright 2019 ©</h6>
+</div>
+</footer>
+<!-- footer kraj -->
+
+
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+<!-- Tooltips -->
+<!-- <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/popper.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+<!-- MDB core JavaScript -->
+<!-- <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/mdb.min.js"></script> -->
+<script type="text/javascript" src="mdb/mdb.min.js"></script>
+
+
+
+
+
+<!-- brisenje na wave effect of navbar ///// slidetogle najavi se-->
+<script>
+	$(".nav-item, .active").removeClass("waves-effect waves-light"); 
+
+
+
+	 $('#najava').click(function(){
+            $('#najava-skrij').slideToggle('slow');
+        });   
+</script>
+
+
+
+</body>
+</html>
