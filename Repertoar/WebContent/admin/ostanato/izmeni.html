@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<%-- Font Awesome --%>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+<%-- Bootstrap core CSS --%>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+
+<%-- Material Design Bootstrap --%>
+<link href="../mdb/mdb.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="shortcut icon" type="image/png" href="../sliki/favicon.png"/>
+  <title>Филмски Репертоар</title>
+</head>
+
+<body>
+
+
+
+<%-- Citanje korisnici od baza
+
+<form method="post">
+
+<table border="2">
+<tr>
+<td>id</td>
+<td>korisnikаа</td>
+<td>lozinka</td>
+</tr>
+<%
+
+
+try
+{
+Class.forName("com.mysql.jdbc.Driver");
+String url="jdbc:___DATABASE_HOST:PORT___/___DATABASE_NAME___?serverTimezone=Europe/Skopje&Unicode=true&characterEncoding=UTF-8";
+String mysql_korisnik="___DATABASE_USER___";
+String mysql_lozinka="___DATABASE_PASSWORD___";
+String query="select * from korisnici";
+Connection conn=DriverManager.getConnection(url,mysql_korisnik,mysql_lozinka);
+Statement stmt=conn.createStatement();
+ResultSet rs=stmt.executeQuery(query);
+while(rs.next())
+{
+
+%>
+    <tr>
+    <td><%=rs.getInt("id") %></td>
+    <td><%=rs.getString("korisnik") %></td>
+    <td><%=rs.getString("lozinka") %></td>
+</tr>
+
+        <%
+
+}
+%>
+    </table>
+    <%
+    rs.close();
+    stmt.close();
+    conn.close();
+    }
+catch(Exception e)
+{
+    e.printStackTrace();
+    }
+
+
+
+
+%>
+
+</form> --%>
+
+
+
+<nav class="navbar navbar-expand-md navbar-dark svetlo-sina my-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">Добредојде, Кристијан</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="index.html">Нов филм</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#"><span class="b">Измени</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#">Избриши</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-unique" href="#">Одјави се</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</nav>
+
+
+
+<div class="my-3 py-1 svetlo-sina golemi-bukvi">
+<div class="container">
+<h3 class="ml-3 my-1 podnaslov">Изменување <span class="b">на филм</span></h3>
+</div>
+</div>
+
+
+<div class="container">
+<div class="col-12">
+
+<form class="needs-validation" novalidate>
+
+<div class="form-row">
+
+    <div class="col-md-4 mb-3">
+      <label for="naslov">Наслов:</label>
+      <input type="text" class="form-control" id="naslov" placeholder="Наслов" required>
+      <div class="invalid-feedback">
+      Насловот е задолжителен
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+    <label for="slika">Основна слика:</label>
+    <input type="text" class="form-control" id="slika" placeholder="Линк до сликата (510x750)" required>
+    <div class="invalid-feedback">
+    Сликата е задолжителна
+    </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+    <label for="godina">Година:</label>
+    <input type="text" class="form-control" id="godina" placeholder="Година на издавање" required>
+    <div class="invalid-feedback">
+    Годината е задолжителна
+    </div>
+    </div>
+
+  </div>
+
+
+
+<div class="form-row">
+    <div class="col-12 mb-3">
+      <label for="opis">Опис:</label>
+      <textarea class="form-control" rows="5" id="opis" placeholder="Опис на филмот" required></textarea>
+      <div class="invalid-feedback">
+      Описот е задолжителен
+      </div>
+    </div>
+</div>
+
+
+
+<div class="form-row">
+
+    <div class="col-md-4 mb-3">
+      <label for="zanr">Жанр:</label>
+      <input type="text" class="form-control" id="zanr" placeholder="Жанр/ови во кои припаѓа филмот" required>
+      <div class="invalid-feedback">
+      Жанрот е задолжителен
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+    <label for="cena">Цена:</label>
+    <input type="text" class="form-control" id="cena" placeholder="Цена во денари" required>
+    <div class="invalid-feedback">
+    Цената е задолжителна
+    </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+    <label for="datum">Датум:</label>
+    <input type="date" class="form-control" id="godina" placeholder="Датум на прикажување на кино" required>
+    <div class="invalid-feedback">
+    Даумот е задолжителен
+    </div>
+    </div>
+
+  </div>
+
+
+
+
+<div class="form-row">
+
+    <div class="col-md-6 mb-3">
+      <label for="imdb">IMDb:</label>
+      <input type="text" class="form-control" id="imdb" placeholder="Линк до IMDb страната за филмот" required>
+      <div class="invalid-feedback">
+      IMdB линкот е задолжителен
+      </div>
+    </div>
+
+
+
+
+    <div class="col-md-6 mb-3">
+    <label for="slajder-slika">Слика за слајдер:<small class="text-muted"> (Не е задолжително)</small></label>
+    <input type="text" class="form-control" id="slajder-slika" placeholder="Линк до сликата (1500x750)">
+    </div>
+
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-2">
+      <button class="btn btn-success">Зачувај</button>
+    </div>
+  </div>
+
+
+  <%-- Skripta za validacija na formata --%>
+  <script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+
+
+</form> 
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%-- footer --%>
+<footer class="my-3 svetlo-sina">
+<div class="container">
+<h6 class="py-1"><img src="../sliki/logo-footer.png" class="logo-footer"> Филмски Репертоар - Copyright 2019 ©</h6>
+</div>
+</footer>
+<%-- footer kraj --%>
+
+
+
+<%-- JQuery --%>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<%-- Tooltips --%>
+<%-- <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/popper.min.js"></script> --%>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<%-- Bootstrap core JavaScript --%>
+<%-- MDB core JavaScript --%>
+<%-- <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/mdb.min.js"></script> --%>
+<script type="text/javascript" src="../mdb/mdb.min.js"></script>
+</body>
+</html>

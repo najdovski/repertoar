@@ -1,0 +1,470 @@
+@font-face {
+font-family: "Futura New Book";
+src: url("font/FTN35.otf");
+}
+
+@font-face {
+font-family: "Futura New Heavy";
+src: url("font/FTN75.otf");
+}
+
+@font-face {
+font-family: "Futura New Medium";
+src: url("font/FTN55.otf");
+}
+
+
+body{
+	background-color:#002b37;
+	font-family: "Futura New Book";
+	color:white;
+}
+
+:focus {
+outline: 0;
+}
+
+
+/*pocetna header start*/
+
+#najava{
+	color:#e91e63;
+	text-transform: uppercase;
+}
+
+#rozevo{
+	color:#e91e63;
+}
+
+
+
+@media (max-width: 576px) {
+#najava{
+	font-size: 0.6em;
+}
+}
+
+.najava-pole{
+	width:17rem;
+}
+
+
+#najava-skrij{
+	display:none;
+}
+
+.soc{
+	height:1.5rem;
+	transition:1s;
+}
+
+@media (max-width: 992px) {
+
+.soc{
+	height:0.5rem;
+	transition:1s;
+}
+
+}	
+	
+.soc:hover{
+    opacity:0.7;
+    transform: scale(1.4);
+}
+
+#preb{
+	width:17rem;
+	font-family: "Futura New Book";
+}
+
+#preb::-webkit-input-placeholder {
+	/*text-align:right;*/
+	font-size:small;
+	color:rgba(0, 0, 0, 0.3);
+}
+
+.svetlo-sina{
+	background-color:#043643;
+}
+/*pocetna header kraj*/
+
+
+/*meni*/
+
+.logo{
+	height:3rem;
+}
+
+.nav-link{
+	font-size:1.35em;
+}
+
+.navbar-nav .active{
+	font-family: "Futura New Heavy";
+}
+
+/*meni kraj*/
+
+/*span*/
+
+.b{
+	font-family: "Futura New Heavy";
+}
+
+/*span kraj*/
+
+/*slajder*/
+
+.strelka{
+	font-size:5em;
+}
+
+.slider-naslov{
+	font-size: 6em;
+	margin-top:-10rem;
+	text-align: right;
+	margin-bottom: -5%;
+}
+
+.slider-godina{
+font-size:4em;
+font-family: "Futura New Heavy";
+text-align: right;
+margin-bottom: -2%;
+}
+
+.slider-datum{
+	font-size:2em;
+	text-align: right;
+}
+
+.carousel-item .img-fluid {
+  width:100%;
+  height:100%;
+}
+
+@media (max-width: 992px) {
+
+.slider-naslov{
+	margin:auto;
+	font-size:2em;
+}
+
+.slider-godina{
+	margin-top:0rem;
+	font-size:1.3em;
+}
+
+.slider-datum{
+	margin:auto;
+	font-size: 0.8em;
+}
+}
+
+/*slajder kraj*/
+
+/*najnovi filmovi*/
+.najnovi-filmovi{
+	text-transform: uppercase;
+}
+
+.pink-text{
+	text-align:right;
+	font-size:2em;
+}
+
+.card-title{
+	color:black;
+	text-align:right;
+	font-size: 1.2em;
+}
+
+.card-text{
+	text-align:right;
+}
+
+
+
+@media (max-width: 992px) {
+.karticka-naslov{
+	font-size:1em !important;
+}
+
+.card-title{
+	font-size:0.8em;
+}
+
+
+.card-text{
+	display:none;
+}
+.btn-unique{
+left:20%;
+}
+
+.podnaslov{
+font-size:1em;
+}
+
+}
+
+
+@media (max-width: 576px) {
+.karticka-naslov{
+	font-size:0.8em !important;
+}
+.card-title{
+	font-size:0.6em;
+}
+
+.btn-unique{
+left:auto;
+}
+
+}
+/*najnovi filmovi kraj*/
+
+
+
+/* najlajkuvani filmovi pocetok */
+.najlajkuvani-filmovi{
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.sredina {
+  text-align: center;
+  font-size:1.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:101%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.najlajkuvani-slika{
+	width:100%;
+	border-radius: 15px;
+}
+
+.pozadina{
+	background-color: black;
+}
+
+.lajkoj{
+  text-align: right;
+  font-size:1.5em;
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-left:2%;
+  padding-right:2%;
+  border-radius: 20px;
+}
+
+
+.srce{
+	font-size:0.85em;
+	color:#e91e63;
+}
+
+@media (max-width: 992px) {
+.sredina{
+	font-size:0.8em;
+}
+
+.lajkoj{
+	font-size:0.8em;
+}
+}
+
+
+
+@media (max-width: 576px) {
+.sredina{
+	font-size:0.8em;
+}
+
+.lajkoj{
+	font-size:0.8em;
+}
+}
+/*najlajkuvani filmovi kraj */
+
+
+/*footer*/
+.logo-footer{
+	height:1.1rem;
+}
+/*footer kraj*/
+
+/*admin panel*/
+.golemi-bukvi{
+	text-transform: uppercase;
+}
+
+.admin-tabela-listanje{
+	text-align:center;
+}
+
+.admin-tabela-listanje th{
+	font-weight: 800;
+}
+
+#imdb-link{
+display:none !important;
+}
+
+/*admin panel kraj*/
+
+
+/*najava*/
+/*najava kraj*/
+
+
+.film{
+	color:white;
+	background-color: #880e4f;
+    display:inline;
+    padding:0.35em;
+	font-family: "Futura New Medium";
+	border-radius:5px;
+}
+
+.opis{
+	text-align:justify;
+}
+
+.lajk{
+	color:#e91e63;
+	font-size:7em;
+	opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+
+.lajk:hover { 
+	opacity:1;
+}
+
+.fb{
+	color:#5b7fc9;
+	font-size:3em;
+	opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+
+.fb:hover { 
+	opacity:1;
+}
+
+.twt{
+	color:#1da1f2;
+	font-size:3em;
+	opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+
+.twt:hover { 
+	opacity:1;
+}
+
+.boja{
+	color:#e91e63;
+}
+
+.bel-link{
+	color:white;
+}
+
+.bel-link:hover{
+	color:#e91e63;
+}
+
+.imdb-info{
+	font-family:"Futura New Heavy";
+	color:#e91e63;
+}
+
+
+/*Repertoar*/
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+}
+
+.repertoar-slika{
+	border-radius: 8px;
+	max-width:100%;
+}
+
+.repertoar-tabela{
+	text-align:center;
+}
+
+.karta{
+	color:#880e4f;
+}
+
+a.page-link{
+	color:white !important;
+}
+
+a.page-link:hover{
+	color:#002b37 !important;
+}
+
+/*Kontakt*/
+.kontakt-detali{
+	background-color:#880e4f;
+	border-radius:10px;
+	text-align:center;
+}
+
+.ikonce{
+	font-size:3em;
+}
+
+.kontakt-mapa{
+	border:0;
+	border-radius:10px;
+	height:300px;
+}
+
+
+/*NOVOSTI*/
+
+#novosti img{
+object-fit: cover;
+width: 100%;
+height: 15rem;
+border-radius:15px;
+ }
+ 
+ .belo{
+ color:white;
+ }
+ 
+ #novosti-karticka{
+ background-color:#043643;
+ border-radius:15px;
+ padding-left:-20px;
+ padding:20px 0;
+ }
+ 
+ #novosti-link:hover{
+ color:#e91e63 !important;
+ }
